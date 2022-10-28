@@ -29,7 +29,7 @@ class Tags extends React.Component {
     this.setState(
       (state) => ({
         tags: [...state.tags, text.trim()],
-        text: "",
+        text: " ",
       }),
       () => this.props.onChangeTags && this.props.onChangeTags(this.state.tags)
     );
